@@ -28,4 +28,8 @@ public class BekarysCourse {
     @ManyToOne
     @JoinColumn(name = "author_id")
     private com.amirbekov.amirbekovbelarysproject.entity.BekarysUser author; // Автор курса — это пользователь
+
+    @ManyToOne
+    @JoinColumn(name = "category_id")
+    private BekarysCategory category;
 }
