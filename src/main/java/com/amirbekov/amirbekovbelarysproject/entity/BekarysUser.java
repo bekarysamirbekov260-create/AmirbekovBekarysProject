@@ -1,4 +1,4 @@
-package com.example.demo.entity; // Убедись, что путь совпадает с твоим
+package com.amirbekov.amirbekovbelarysproject.entity; // Убедись, что путь совпадает с твоим
 
 import jakarta.persistence.*;
 import lombok.*;

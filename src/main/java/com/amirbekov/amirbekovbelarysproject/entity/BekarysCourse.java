@@ -1,4 +1,4 @@
-package com.example.demo.entity;
+package com.amirbekov.amirbekovbelarysproject.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -27,5 +27,5 @@ public class BekarysCourse {
 
     @ManyToOne
     @JoinColumn(name = "author_id")
-    private BekarysUser author; // Автор курса — это пользователь
+    private com.example.demo.entity.BekarysUser author; // Автор курса — это пользователь
 }
