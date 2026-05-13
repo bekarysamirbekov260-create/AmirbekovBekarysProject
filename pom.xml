@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.Amirbekov</groupId>
-    <artifactId>AmirbekovBelarysProject</artifactId>
+    <artifactId>AmirbekovBekarysProject</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>AmirbekovBelarysProject</name>
     <description>AmirbekovBelarysProject</description>
