@@ -15,8 +15,22 @@ public class BekarysUserService {
 
     // ОСТАВЛЯЕМ ТОЛЬКО ОДИН ЭТОТ МЕТОД
     public BekarysUser registerUser(BekarysUser user) {
-        // Шифруем пароль перед сохранением
         user.setPassword(passwordEncoder.encode(user.getPassword()));
-        return userRepository.save(user);
+        BekarysUser savedUser = userRepository.save(user);
+
+        // Вызываем асинхронно!
+        sendWelcomeEmail(savedUser.getEmail());
+
+        return savedUser;
+    }
+    @org.springframework.scheduling.annotation.Async
+    public void sendWelcomeEmail(String email) {
+        // Имитируем долгую отправку письма (3 секунды)
+        try {
+            Thread.sleep(3000);
+            System.out.println("Email successfully sent to: " + email + " (Asynchronously)");
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
