@@ -20,5 +20,7 @@ public class BekarysCategory {
     private String name;
 
     @OneToMany(mappedBy = "category")
+    @com.fasterxml.jackson.annotation.JsonIgnore
     private List<BekarysCourse> courses;
+
 }
