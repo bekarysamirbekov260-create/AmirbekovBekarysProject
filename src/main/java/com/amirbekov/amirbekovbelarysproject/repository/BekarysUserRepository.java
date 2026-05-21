@@ -1,5 +1,5 @@
 package com.amirbekov.amirbekovbelarysproject.repository;
-
+// Репозиторий для сущности пользователя
 import com.amirbekov.amirbekovbelarysproject.entity.BekarysUser;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
