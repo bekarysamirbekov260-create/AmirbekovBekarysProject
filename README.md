@@ -1,1 +1,2 @@
-REST API на базе Spring Boot 3.x с многослойной структурой (Controller -> Service -> Repository -> Entity).
+* **Безопасность (Spring Security):** Реализован класс `BekarysSecurityConfig` для защиты эндпоинтов. CSRF отключен для корректной работы через Postman. Доступы к авторизации и документации Swagger полностью открыты через `permitAll()`. Пароли шифруются с помощью `BCryptPasswordEncoder`.
+* **Валидация данных (Jakarta Validation):** В сущности `BekarysUser` настроена строгая валидация входных данных. Поля `username`, `password` и `email` защищены аннотацией `@NotBlank`, а поле электронной почты дополнительно проверяется аннотацией `@Email` на уровне полей класса.
