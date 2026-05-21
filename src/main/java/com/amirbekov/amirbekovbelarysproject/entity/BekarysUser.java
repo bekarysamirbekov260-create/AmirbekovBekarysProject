@@ -1,3 +1,4 @@
+// Сущность пользователя системы по заданию
 package com.amirbekov.amirbekovbelarysproject.entity;
 
 import jakarta.persistence.*;
