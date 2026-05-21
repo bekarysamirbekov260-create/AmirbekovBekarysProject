@@ -16,7 +16,7 @@ services:
       retries: 5
 
   app:
-    build: .
+    build: src
     container_name: bekarys_spring_app
     ports:
       - "8080:8080"
